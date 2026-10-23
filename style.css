@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #f1faf3;
+}
+
+a {
+    text-decoration: none;
+    color: #040404;
+}
+
+button, .findproduce-btn, .checkmarketprice-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    background-color: #0b6e4f;
+    color: #f1faf3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #013220;
+}
+
+.subtitle{
+    color: #0b6e4f;
+    font-weight:lighter;
+    margin-bottom: 1rem;
+    display: block;
+    padding-top: 0%;
+}
+
+.siteheader{
+    padding: 1rem 4rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #f0f9f1;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo a{
+    font-size: larger;
+    font-weight: bolder;
+    color: #013220;
+
+    span{
+        color: #0b6e4f;
+        font-weight:bold;
+    }
+}
+
+.navlinks{
+    display: flex;
+    gap: 8rem;
+
+}
+
+.navlinks a {
+    color: #013220;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #0b6e4f;
+    transition: linear 0.3s ease;
+}
+
+.hero{
+    display:flex;
+    align-items: center;
+    padding: 8rem;
+    padding-left: 4rem;
+    min-height: fit-content;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.5) 45%,rgba(0, 0, 0, 0.1) 100%), url(../assets/picture1.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.hero-tagline{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #f1faf3;
+
+    span{
+        color: #0b6e4f;
+        font-weight:bold;
+    } 
+}
+
+.hero-slogan{
+    color: #f1faf3;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    
+}
+
+.hero-description{
+    padding-bottom: 2rem;
+}
+
+.hero-btn{
+    display:flex;
+    gap: 20px;
+}
+
+.process-card{
+    display: flex;
+    padding: 4rem;
+    padding-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b6e4f;
+    gap: 4rem;
+
+}
+
+.process-tagline-div{
+    display: block;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b6e4f;
+}
+
+.process-tagline{
+    font-weight: bolder;
+    font-size:50px;
+}
+
+.process-p1, .process-p2, .process-p3{
+    font-weight: bold;
+    font-size:20px; 
+    color: #040404;
+}
+
+.process-card1, .process-card2, .process-card3{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+footer{
+    color: #040404;
+    background-color: #f0f9f1;
+    padding: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem; 
+    margin-bottom:2rem;
+
+}
+
+.navlink-footer{
+    display: flex;
+    gap: 2rem;
+}
+
+.navlink-footer a{
+    color: #013220;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.navlink-footer a:hover{
+    color: #0b6e4f;
+    transition: linear 0.3s ease;
+}
+
+.copyright{
+    font-size: small;
+}
+
+.menu-button{
+    display: none;
+    border: none;
+    background: transparent;
+}
+
+@media(max-width: 900px){
+    .navlinks{
+       position: absolute;
+       top: 70px;
+       left: 0;
+       width: 100;
+       background-color: #f0f9f1;
+       border-bottom: 1px #f0f9f1;
+       display: none;
+       flex-direction: column;
+       padding: 1rem;
+       text-align: center;
+    }
+
+    .navlinks.show{
+        display:flex;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+
+
+

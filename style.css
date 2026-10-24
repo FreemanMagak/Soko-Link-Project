@@ -281,3 +281,59 @@ footer{
 
 }
 
+.listing-section,
+.market-section {
+    padding: 3rem 4rem;
+    color: #013220;
+}
+
+.listing-section form {
+    display: grid;
+    gap: 0.8rem;
+    max-width: 500px;
+    margin-top: 1.5rem;
+}
+
+.listing-section input,
+.listing-section select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #c4c5c7;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.listing-section label {
+    font-weight: bold;
+}
+
+#cropPrice,
+#formMessage,
+#marketMessage {
+    margin-top: 0.5rem;
+}
+
+#marketPriceResults {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.market-price-card {
+    background: white;
+    border: 1px solid #c4c5c7;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+@media (max-width: 700px) {
+    .listing-section,
+    .market-section {
+        padding: 2rem 1rem;
+    }
+
+    #marketPriceResults {
+        grid-template-columns: 1fr;
+    }
+}

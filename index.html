@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=calendar_month" />
 
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
     
 </head>
 <body>
@@ -166,17 +166,13 @@
                             <h4 class="produce-type"> Tomatoes </h4>
                             
                             <p class="produce-location"> 
-                                <span>
-                                    Location:
-                                </span>Nakuru
+                                Location: Nakuru
                             </p>
 
                             <p class="produce-price"> 500kg | Ksh.40/kg </p>
 
                             <p class="produce-date">
-                                <span>
-                                Date of Harvest:
-                                </span>  12 Oct 2026
+                                Date of Harvest: 12 Oct 2026
                             </p>
 
                             <button class="tomatoes-button"> View Details </button>
@@ -194,17 +190,13 @@
                             <h4 class="produce-type"> Potatoes </h4>
                             
                             <p class="produce-location"> 
-                                <span>
-                                    Location:
-                                </span>Nakuru
+                                Location: Nakuru
                             </p>
 
                             <p class="produce-price"> 200kg | Ksh.30/kg </p>
 
                             <p class="produce-date">
-                                <span>
-                                Date of Harvest:
-                                </span>  15 Oct 2026
+                                Date of Harvest:15 Oct 2026
                             </p>
 
                             <button class="tomatoes-button"> View Details </button>
@@ -222,17 +214,14 @@
                             <h4 class="produce-type"> Spinach </h4>
                             
                             <p class="produce-location"> 
-                                <span>
-                                    Location:
-                                </span>Nakuru
+                                    Location:Nakuru
                             </p>
 
                             <p class="produce-price"> 200kg | Ksh.35/kg </p>
 
                             <p class="produce-date">
-                                <span>
-                                Date of Harvest:
-                                </span>  12 Oct 2026
+                            
+                                Date of Harvest: 17 Oct 2026
                             </p>
 
                             <button class="tomatoes-button"> View Details </button>
@@ -241,6 +230,58 @@
                 <!--end of spinach-->
 
             </div>
+
+        </section>
+
+        <section class="listing-section" id="listings">
+
+            <h2>List Your Produce</h2>
+            <p>Connect your harvest with potential buyers.</p>
+
+            <form id="produceForm">
+                <label for="crop">Choose your crop:</label>
+                <select id="crop" name="crop" required>
+                    <option value="">Select produce</option>
+                    <option value="Tomatoes">Tomatoes</option>
+                    <option value="Potatoes">Potatoes</option>
+                    <option value="Spinach">Spinach</option>
+                </select>
+
+                <p id="cropPrice">Select a crop to view its sample market price.</p>
+
+                <label for="location">Location:</label>
+                <input id="location" name="location"
+                    type="text" placeholder="e.g. Nakuru" required>
+
+                <label for="quantity">Quantity (kg):</label>
+                <input id="quantity" name="quantity"
+                    type="number" min="1" required>
+
+                <label for="price">Your price per kg (KSh):</label>
+                <input id="price" name="price"
+                    type="number" min="1" required>
+
+                <label for="harvestDate">Harvest date:</label>
+                <input id="harvestDate" name="harvestDate"
+                    type="date" required>
+
+                <button type="submit">Submit Listing</button>
+                <p id="formMessage" role="status"></p>
+            </form>
+
+        </section>
+
+        <section class="market-section" id="marketprice">
+
+            <h2>Market Prices</h2>
+            <p>Compare the sample prices recorded in SokoLink.</p>
+
+            <button type="button" id="marketPriceBtn">
+                Check Market Prices
+            </button>
+
+            <p id="marketMessage" role="status"></p>
+            <div id="marketPriceResults"></div>
 
         </section>
 

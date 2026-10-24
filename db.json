@@ -1,0 +1,48 @@
+{
+  "produce": [
+    {
+      "id": "1",
+      "name": "Tomatoes",
+      "location": "Nakuru",
+      "quantity": 500,
+      "price": 40,
+      "harvestDate": "2026-10-12"
+    },
+    {
+      "id": "2",
+      "name": "Potatoes",
+      "location": "Nakuru",
+      "quantity": 200,
+      "price": 30,
+      "harvestDate": "2026-10-15"
+    },
+    {
+      "id": "3",
+      "name": "Spinach",
+      "location": "Nakuru",
+      "quantity": 200,
+      "price": 35,
+      "harvestDate": "2026-10-12"
+    }
+  ],
+  "marketPrices": [
+    {
+      "id": "1",
+      "crop": "Tomatoes",
+      "market": "Nakuru",
+      "price": 40
+    },
+    {
+      "id": "2",
+      "crop": "Potatoes",
+      "market": "Nakuru",
+      "price": 30
+    },
+    {
+      "id": "3",
+      "crop": "Spinach",
+      "market": "Nakuru",
+      "price": 35
+    }
+  ]
+}

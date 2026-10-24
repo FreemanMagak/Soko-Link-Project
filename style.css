@@ -223,6 +223,61 @@ footer{
     }
 }
 
+.featured-produce{
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+    color: #0b6e4f;
 
+}
 
+.featured-produce-heading{
+    padding-bottom: 2rem;
+}
+
+/* Featured Produce */
+
+.featured-produce-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.featured-produce-card{
+    background-color: whitesmoke;
+    overflow: hidden;
+    transition: 0.3sec;
+    border: 1px solid #c4c5c7;
+    border-radius: 1rem;
+
+   .produce-image{
+       height: 200px;
+       position: relative;
+       overflow: hidden;
+
+       img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+       }
+       
+    }
+}
+
+.featured-produce-card:hover{
+    transform: translateY(-5px);
+}
+
+.produce-info{
+    padding: 1rem;
+    
+}
+
+.produce-type{
+    padding-bottom: 0.5rem;
+}
+
+.tomatoes-button{
+    padding-top: 1rem;
+
+}
 
